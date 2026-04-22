@@ -1715,6 +1715,9 @@
     background: #eae6e0 !important;
   }
 
+  /* 31 — Editor toolbar hidden for client delivery */
+  #editor-toolbar { display: none !important; }
+
   /* 30 — Mobile: allow slide-content to scroll on small devices */
   @media (max-width: 720px) {
     .slide-content {
@@ -1750,7 +1753,7 @@
 
 <div id="progress-bar" style="width: 87.5%;"></div>
 <div id="chapter-label">10 — Együttműködés</div>
-<img id="logo-top" src="assets/nc-black@2x.png" alt="NBC" onerror="this.style.display='none'">
+<img id="logo-top" src="assets/nc-white@2x.png" alt="NBC">
 <div id="slide-counter">21 / 24</div>
 
 <div id="nav">
@@ -2111,12 +2114,12 @@
         <!-- Inter specimen -->
         <div style="border:1px solid rgba(180,180,180,0.2); padding:0; overflow:hidden;">
           <div style="background:var(--ivory); padding:20px 22px 14px;">
-            <div style="font-size:9px; letter-spacing:0.2em; color:#888; text-transform:uppercase; margin-bottom:6px;" data-ed-id="s05-066" data-ed-fp="Folyószöveg és felület">Folyószöveg és felület</div>
+            <div style="font-size:9px; letter-spacing:0.2em; color:var(--accent); text-transform:uppercase; margin-bottom:6px;" data-ed-id="s05-066" data-ed-fp="Folyószöveg és felület">Folyószöveg és felület</div>
             <div style="font-family:'Inter',sans-serif; font-size:clamp(18px,2vw,28px); font-weight:300; color:var(--noir); line-height:1.35;" data-ed-id="s05-067" data-ed-fp="A drop hétfőn nyit.Tagoknak elsőként.">A drop hétfőn nyit.<br><strong style="font-weight:600;">Tagoknak elsőként.</strong></div>
           </div>
           <div style="background:var(--linen); padding:10px 22px; display:flex; justify-content:space-between; align-items:center;">
             <div style="font-family:'Inter',sans-serif; font-size:12px; color:#888;" data-ed-id="s05-068" data-ed-fp="Inter · Light 300 + SemiBold 600">A Secret Room hétfőn nyit.<br><strong style="font-weight:600;">Csatlakozz most!</strong></div>
-            <div style="font-size:10px; color:#888; letter-spacing:0.12em;" data-ed-id="s05-069" data-ed-fp="Email · UI · Navigáció · Body">Email · UI · Navigáció · Body</div>
+            <div style="font-size:10px; color:var(--accent); letter-spacing:0.12em;" data-ed-id="s05-069" data-ed-fp="Email · UI · Navigáció · Body">Email · UI · Navigáció · Body</div>
           </div>
           <div style="background:var(--ivory); padding:8px 22px; display:flex; gap:16px; align-items:baseline; border-top:1px solid rgba(180,180,180,0.2);" data-ed-id="s05-070" data-ed-fp="Light 300 Regular 400 Medium 500 SemiBold 600">
             <span style="font-family:'Inter',sans-serif; font-size:13px; font-weight:300; color:#999;">Light 300</span>
@@ -3042,9 +3045,9 @@
     <div class="accent-line anim-3"></div>
     <p class="lead anim-3" style="color:var(--noir); max-width:760px; margin-top:8px;" data-ed-id="s20-446" data-ed-fp="A listánk nem egy tömeg, hanem hat különböző szegmens. Minde">A listánk nem egybefüggő tömeg, hanem különböző szegmensként érdemes kezelni őket. Mindenki máshol tart a vásárlói útvonalban és a rendszer ezt leköveti</p>
 
-    <div class="anim-4" style="display:grid; grid-template-columns:1.2fr 1fr; gap:32px; margin-top:20px;">
+    <div class="anim-4" style="display:grid; grid-template-columns:1fr; gap:32px; margin-top:20px;">
 
-      <!-- Bal oldal — szegmensek -->
+      <!-- Szegmensek -->
       <div>
         <div style="font-size:10px; letter-spacing:0.18em; color:var(--accent); text-transform:uppercase; margin-bottom:14px;" data-ed-id="s20-447" data-ed-fp="A vevők hat szegmense">A vásárlók hat szegmense</div>
         <div style="display:flex; flex-direction:column; gap:10px;">
@@ -3072,60 +3075,6 @@
             <div style="font-family:var(--font-display); font-size:15px; color:var(--noir);" data-ed-id="s20-458" data-ed-fp="Csendes tag · 120 napon túl">Csendes tag · 120 napon túl</div>
             <div style="font-size:11px; color:#666; line-height:1.6;" data-ed-id="s20-459" data-ed-fp="Inaktív. Cél: visszahívó-kísérlet, majd elköszönés a küldött">Inaktív. Cél: visszahívó ajánlat.</div>
           </div>
-        </div>
-      </div>
-
-      <!-- Jobb oldal — automatizmusok szegmensek szerint -->
-      <div>
-        <div style="font-size:10px; letter-spacing:0.18em; color:var(--accent); text-transform:uppercase; margin-bottom:14px;">Automatizmusok szegmensek szerint</div>
-
-        <div style="display:flex; flex-direction:column; gap:8px;">
-
-          <div style="background:var(--ivory); padding:13px 18px; border-left:2px solid var(--noir);">
-            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:4px;">
-              <div style="font-family:var(--font-display); font-size:13px; color:var(--noir);">Üdvözlő sorozat · Flow 01</div>
-              <div style="font-size:9px; color:var(--accent); letter-spacing:0.12em; text-transform:uppercase;">0–14 nap</div>
-            </div>
-            <div style="font-size:11px; color:#666; line-height:1.5;">Új érdeklődőknek — 3 levél, Secret Room bevezető</div>
-          </div>
-
-          <div style="background:var(--ivory); padding:13px 18px; border-left:2px solid var(--accent);">
-            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:4px;">
-              <div style="font-family:var(--font-display); font-size:13px; color:var(--noir);">Drop értesítő</div>
-              <div style="font-size:9px; color:var(--accent); letter-spacing:0.12em; text-transform:uppercase;">Drop-hét</div>
-            </div>
-            <div style="font-size:11px; color:#666; line-height:1.5;">Tagoknak — 3 levél: teaser → nyitás → last call</div>
-          </div>
-
-          <div style="background:var(--ivory); padding:13px 18px; border-left:2px solid #888;">
-            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:4px;">
-              <div style="font-family:var(--font-display); font-size:13px; color:var(--noir);">Kosárelhagyó · Flow 02</div>
-              <div style="font-size:9px; color:var(--accent); letter-spacing:0.12em; text-transform:uppercase;">+1–4 óra</div>
-            </div>
-            <div style="font-size:11px; color:#666; line-height:1.5;">Aktív böngészőknek — 2 levél, 24–48 órán belül</div>
-          </div>
-
-          <div style="background:var(--ivory); padding:13px 18px; border-left:2px solid #777;">
-            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:4px;">
-              <div style="font-family:var(--font-display); font-size:13px; color:var(--noir);">Post-purchase · Flow 03</div>
-              <div style="font-size:9px; color:var(--accent); letter-spacing:0.12em; text-transform:uppercase;">+5 nap</div>
-            </div>
-            <div style="font-size:11px; color:#666; line-height:1.5;">Vásárlás után — vélemény-kérés, UGC lehetőség</div>
-          </div>
-
-          <div style="background:var(--ivory); padding:13px 18px; border-left:2px solid #555;">
-            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:4px;">
-              <div style="font-family:var(--font-display); font-size:13px; color:var(--noir);">Win-back · Flow 05</div>
-              <div style="font-size:9px; color:var(--accent); letter-spacing:0.12em; text-transform:uppercase;">40+ nap</div>
-            </div>
-            <div style="font-size:11px; color:#666; line-height:1.5;">Inaktív tagoknak — személyesebb hang, ritka küldés</div>
-          </div>
-
-        </div>
-
-        <div style="background:var(--linen); padding:12px 18px; margin-top:12px;">
-          <div style="font-size:10px; letter-spacing:0.15em; color:var(--accent); text-transform:uppercase; margin-bottom:4px;">Küldési fegyelem</div>
-          <div style="font-size:11px; color:#666; line-height:1.6;">Egy tag hetente maximum 3 levelet kap. Drop-héten kivétel. Az ütközéseket a rendszer automatikusan rendezi.</div>
         </div>
       </div>
     </div>
